@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right, #000000, #0b3c17);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    color:white !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* расстояние между фото и текстом */
+    padding: 20px;
+    background: linear-gradient(to right, #000000, #0b3c17);
+}
+
+
+.image-container {
+    width: 200px; 
+    height: auto;
+}
+.image-container img {
+    max-width: 100%; /* Адаптивное изображение */
+    height: auto;
+}
+
+.text-container {
+    font-size:13px;
+    flex: 1;
+    padding-left: 10px; /* Отступ между изображением и текстом */
+}
+
+.text-container nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 кнопки в ряд */
+    gap: 10px;
+    padding-left: 0;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.text-container nav ul li {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+.btn {
+    display: block;
+    width:100%;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #4f9925 !important; /* Цвет кнопки */
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #79d537 !important;
+    transition: background-color 0.3s ease;
+}
+
+#bigbtn {
+    grid-column: span 2;
+    width: 206%;
+}
+
+footer {
+    background-color: black;
+    text-align:center;
+    padding:10px;
+}
+
+#slider {
+    background:linear-gradient(to right, #ccff33, #70e000);;
+    height:400px;
+}
+#slider p, 
+#slider h2 {
+    color:black;
+    margin-top:20px;
+}
+
+
+#description {
+    background:linear-gradient(to right, #000000, #0b3c17);
+    height:800px;
+}
+#description h2, 
+#description p {
+    color:white !important;
+    margin-top:20px;
+}
+
+
+#reviews {
+    /*background:linear-gradient(to right, #000000, #0b3c17);*/
+    background-image:url("https://images7.alphacoders.com/623/623929.jpg");
+    background-size: cover;               
+    background-repeat: no-repeat;         
+    background-position: center; 
+    height:400px;
+}
+
+#reviews h2, 
+#reviews p {
+    color:white;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center ;   
+    text-align: center;  
+    margin-top:20px; 
+}
+
+#reviews form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formName,
+#formPhone {
+    display: flex;
+    align-items: center;
+    margin:10px auto;
+
+    color:#004b23;
+    font-weight:bold;
+    text-align:center;
+    font-size:17px;
+    background:linear-gradient(to top,  #ccff33, #70e000);
+    border:0px;
+    border-radius:3px;
+    height:30px;
+    width:400px;
+}
+
+#formName::placeholder,
+#formPhone::placeholder {
+    color:#004b23;
+    font-size:17px;
+    text-align:center;
+    font-weight:bold;
+}
+
+#formAgreement {
+    margin-right: 0;
+}
+
+label[for="formAgreement"] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+#formButton {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    height:30px;
+    width:110px;
+    border:0px;
+    border-radius:3px;
+    text-align:center;
+    font-weight:bold;
+    color:#004b23;
+    background:linear-gradient(to top,  #ccff33, #70e000);
+}
+
+
+#description h2, 
+#description p {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    text-align: center;  
+}
+
+#description p {
+    font-size:17px;
+    font-weight:bold; 
+    color:#ccff33;
+}
+
+
+#mysiaplush {
+    display:block;
+    margin: 0 auto;
+    height:300px;
+    transition: 0.3s ease;
+}
+
+#mysiaplush:hover {
+    height:310px;
+    transition: 0.3s ease;
+}
+
+#crp {
+    display:block;
+    margin: 0 auto;
+    height:200px;
+    transition: 0.3s ease;
+}
+
+#crp:hover {
+    height:210px;
+    transition: 0.3s ease;
+}
+
+#slider h2 {
+    text-align:center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius:20px;
+}
